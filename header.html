@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <style type="text/css">
+        .nav{
+            height: 30px;
+            line-height: 30px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #ececec;
+        }
+        .nav ul li{
+            position: relative;
+            float: left;
+            font-size: 12px;
+            margin-left: 25px;
+        }
+        .nav ul li a{
+            color: #666;
+            font-size: 12px;
+        }
+        .nav ul li.en i{
+            position: absolute;
+            top: 0;
+            right: -15px;
+            display: block;
+            width: 13px;
+            height: 16px;
+            background: url("images/nav-new.gif") no-repeat;
+        }
+        .nav ul li .arrow{
+            font: 14px aria;
+
+        }
+        .nav ul li.cur{
+            color: #e1451b;
+            font-weight: bold;
+            border-bottom: 2px solid #e1451b;
+            margin-top: -1px;
+        }
+        .nav ul li a:hover{
+            color: #e1451b;
+        }
+
+
+        .header{
+            height: 100px;
+            width: 980px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header .header-logo{
+            display: inline-block;
+            width: 135px;
+            height: 40px;
+            background: url("images/index-logo.png") no-repeat;
+            margin: 30px 30px 0 0;
+        }
+        .header .form{
+            display: inline-block;
+            height: 30px;
+            margin-top: 30px;
+            vertical-align: top;
+        }
+        .header .form-input,.header .form-button{
+            float: left;
+        }
+        .header .form-input{
+            position: relative;
+            border: 1px solid #979797;
+            border-right: none;
+            border-bottom-color: #bcbcbc;
+            width: 490px;
+            height: 30px;
+        }
+        .header .form-input input{
+            font-size: 14px;
+            width: 470px;
+            padding: 0 10px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .header .form-input ul{
+            display: none;
+            width: 488px;
+            text-align: left;
+            background-color: #fff;
+            position: absolute;
+            top: 31px;
+            left: 0;
+            border: 1px solid #cdcdcf;
+            border-top: none;
+        }
+        .header .form-input ul li{
+            cursor: pointer;
+            height: 25px;
+            line-height: 25px;
+        }
+        .header .form-input ul li:hover{
+            background-color: #0099FF;
+        }
+        .header .form-input ul li:hover a{
+            color: #fff;
+        }
+        .header .form-input ul li a{
+            color: #000;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+        .header .form-button{
+            width: 108px;
+            height: 30px;
+            border: 1px solid #279a14;
+        }
+        .header .form-button input{
+            cursor: pointer;
+            width: 108px;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            background-color: #279a14;
+            border-left: none;
+        }
+        .header .form-button input:hover{
+            opacity: 0.8;
+            filter:alpha(opacity=80);
+        }
+
+        .container{
+            width: 1240px;
+            margin: 0 auto;
+        }
+
+        .page-nav{
+            height: 36px;
+            line-height: 36px;
+            background-color: #333;
+        }
+        .page-nav ul li{
+            position: relative;
+            cursor: pointer;
+            float: left;
+            padding: 0 24px;
+        }
+        .page-nav ul li.cur,.page-nav ul li.cur:hover{
+            background-color: #28a913;
+        }
+        .page-nav ul li:hover{
+            background-color: #555;
+        }
+        .page-nav ul li i{
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            margin-left: -20px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url("images/index_tip.gif") no-repeat;
+        }
+        .page-nav ul li a{
+            color: #f2f2f2;
+            font-size: 15px;
+        }
+        .page-nav ol{
+            float: right;
+        }
+        .page-nav ol li{
+            float: left;
+            color: #666;
+        }
+        .page-nav ol li.hot i{
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background: url("images/index-hot.png") no-repeat;
+            background-position: 0 4px;
+            vertical-align: bottom;
+
+        }
+        .page-nav ol li.hot:hover i{
+            background-position: 0 -36px;
+        }
+        .page-nav ol li a{
+            color: #fff;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+        .page-nav ol li.hot a{
+            padding-left: 0;
+        }
+        .page-nav ol li:hover a{
+            color: #a8a8a8;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="javascript:;">新闻</a></li>
+        <li><a href="javascript:;">网页</a></li>
+        <li><a href="javascript:;">微信</a></li>
+        <li><a href="javascript:;">知乎</a></li>
+        <li><a href="javascript:;">图片</a></li>
+        <li><a href="javascript:;">视频</a></li>
+        <li><a href="javascript:;">名医</a></li>
+        <li class="en"><a href="javascript:;">英文</a><i></i></li>
+        <li class="cur">音乐</li>
+        <li><a href="javascript:;">更多<span class="arrow">»</span></a></li>
+    </ul>
+</div>
+
+<div class="header">
+    <a class="header-logo"></a>
+    <div class="form clearfix">
+        <div class="form-input">
+            <input type="text"/>
+            <ul>
+                <li><a href="javascript:;">0000000</a></li>
+                <li><a href="javascript:;">1111111</a></li>
+                <li><a href="javascript:;">2222222</a></li>
+                <li><a href="javascript:;">3333333</a></li>
+                <li><a href="javascript:;">4444444</a></li>
+            </ul>
+        </div>
+        <div class="form-button">
+            <input type="button" value="搜狗搜索"/>
+        </div>
+    </div>
+</div>
+
+<div class="page-nav">
+    <div class="container clearfix">
+        <ul>
+            <li class="cur"><i></i><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">榜单</a></li>
+            <li><a href="javascript:;">歌手</a></li>
+            <li><a href="javascript:;">标签</a></li>
+            <li><a href="javascript:;">歌单</a></li>
+            <li><a href="javascript:;">专辑</a></li>
+            <li><a href="javascript:;">MV</a></li>
+        </ul>
+
+        <ol class="clearfix">
+            <li class="hot"><i></i><a href="javascript:;">抗洪赞歌不忘初心</a>|</li>
+            <li><a href="javascript:;">好声音现场视频</a></li>
+        </ol>
+    </div>
+</div>
+
+
+</body>
+</html>

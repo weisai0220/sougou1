@@ -1,0 +1,131 @@
+@charset "utf-8";
+.container{
+    width: 1000px;
+    min-width: 1000px;
+}
+.part1 .part1-left{
+    width: 680px;
+    float: left;
+    margin: 10px 40px 0 0;
+}
+.part1 .part1-left .part1-left-item{
+    font-size: 0;
+    border-bottom: 1px solid #eee;
+}
+.part1 .part1-left .part1-left-item:last-child{
+    border-bottom: none;
+}
+.part1 .part1-left .part1-left-item .item-img{
+    display: inline-block;
+    float: left;
+    padding: 20px 30px 20px 0;
+}
+.part1 .part1-left .part1-left-item .item-img img{
+    width: 150px;
+    height: 150px;
+}
+.part1 .part1-left .part1-left-item ul{
+    padding-top: 10px;
+}
+.part1 .part1-left .part1-left-item:nth-child(6) ul{
+    padding-top: 25px;
+}
+.part1 .part1-left .part1-left-item ul li{
+    width: 98px;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+}
+.part1 .part1-left .part1-left-item ul li a{
+    color: #444;
+    font-size: 14px;
+}
+.part1 .part1-left .part1-left-item ul li a:hover,.part1 .part1-left .part1-left-item ul li.cur a{
+    color: #28a913;
+}
+
+.part1 .part1-right{
+    width: 280px;
+    float: left;
+    margin-top: 25px;
+}
+.part1 .part1-right .part-head h3{
+    color: #222;
+    font-size: 18px;
+    font-weight: normal;
+    float: left;
+}
+.part1 .part1-right .part-head a{
+    color: #328e23;
+    font-size: 12px;
+    float: right;
+    padding-top: 10px;
+}
+.part1 .part1-right .part1-right-img{
+    font-size: 0;
+    margin: 10px -35px 0 0;
+}
+.part1 .part1-right .part1-right-img li{
+    width: 70px;
+    float: left;
+    margin: 0 35px 15px 0;
+}
+.part1 .part1-right .part1-right-img li .item-img{
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.part1 .part1-right .part1-right-img li .item-img img{
+    width: 70px;
+    height: 70px;
+}
+.part1 .part1-right .part1-right-img li .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.part1 .part1-right .part1-right-img li .item-img:hover .cover{
+    background: rgba(255,255,255,.3);
+}
+.part1 .part1-right .part1-right-img li p{
+    width: 60px;
+    margin: 5px 5px 0;
+    text-align: center;
+}
+.part1 .part1-right .part1-right-img li p a{
+    display: block;
+    color: #666;
+    font-size: 12px;
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.part1 .part1-right .part1-right-img li p a:hover{
+    color: #28a913;
+}
+.part1 .part1-right .part1-right-name{
+    font-size: 0;
+    margin-right: -17px;
+}
+.part1 .part1-right .part1-right-name a{
+    color: #666;
+    font-size: 12px;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    border: 1px solid #d1d1d1;
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    margin: 0 17px 10px 0;
+}
+.part1 .part1-right .part1-right-name a:hover{
+    color: #28a913;
+    border-color: #28a913;
+}

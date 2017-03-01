@@ -1,0 +1,243 @@
+@charset "utf-8";
+.container{
+    width: 1000px;
+    min-width: 1000px;
+}
+.part1{
+    margin-top: 10px;
+}
+.part1 h3{
+    color: #333;
+    font-size: 20px;
+    font-weight: normal;
+}
+.part1 h3 i{
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    margin-right: 10px;
+    background: url("../images/index_icon.png") no-repeat;
+    background-position: -20px -132px;
+    vertical-align: middle;
+}
+.part1 .part1-con{
+    position: relative;
+    width: 990px;
+    height: 230px;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+.part1 .part1-con ul{
+    position: absolute;
+    width: 2500px;
+}
+.part1 .part1-con ul li{
+    width: 188px;
+    height: 188px;
+    margin: 12px 5px 0;
+    float: left;
+}
+.part1 .part1-con ul li a{
+    display: block;
+    width: 188px;
+    height: 188px;
+    position: relative;
+    transition: all linear .2s;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.part1 .part1-con ul li:hover a{
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    transform: scale(1.06);
+    transition: all linear .2s;
+}
+.part1 .part1-con ul li img{
+    width: 188px;
+    height: 188px;
+    display: inline-block;
+}
+.part1 .part1-con ul li .singerName{
+    position: absolute;
+    left: 10px;
+    bottom: 12px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 2;
+}
+.part1 .part1-con ul li .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.part1 .part1-con ul li:hover .cover{
+    background: rgba(0,0,0,.2);
+}
+.part1 .part1-con .part1-btn a{
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    z-index: 3;
+}
+.part1 .part1-con .part1-btn a.prev{
+    left: 0;
+    background: url("../images/singers/arrow_prev03.png") no-repeat;
+}
+.part1 .part1-con .part1-btn a.prev:hover{
+    background-image: url("../images/singers/arrow_prev03_hover.png");
+}
+.part1 .part1-con .part1-btn a.next{
+    right: 0;
+    background: url("../images/singers/arrow_next03.png") no-repeat;
+}
+.part1 .part1-con .part1-btn a.next:hover{
+    background-image: url("../images/singers/arrow_next03_hover.png");
+}
+
+
+.part2{
+    margin-top: 30px;
+}
+.part2 .part2-type{
+    float: left;
+    width: 185px;
+    padding-left: 15px;
+}
+.part2 .part2-type a{
+    color: #666;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 25px;
+}
+.part2 .part2-type a:hover{
+    color: #28a913;
+}
+.part2 .part2-type h3{
+    color: #222;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.part2 .part2-con{
+    width: 800px;
+    float: left;
+}
+.part2 .part2-con .part2-filter{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.part2 .part2-con .part2-filter a{
+    padding: 3px 7px;
+    color: #222;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.part2 .part2-con .part2-filter a:hover,.part2 .part2-con .part2-filter a.cur{
+    color: #fff;
+    background-color: #28a913;
+}
+.part2 .part2-con ul{
+    margin: 15px -15px 0 0;
+}
+.part2 .part2-con ul li{
+    width: 146px;
+    height: 146px;
+    float: left;
+    border: 1px solid #eee;
+    margin: 0 15px 15px 0;
+}
+.part2 .part2-con ul li a{
+    display: block;
+    width: 146px;
+    height: 146px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.part2 .part2-con ul li a img{
+    width: 146px;
+    height: 146px;
+    transition: all linear .2s;
+}
+.part2 .part2-con ul li a:hover img{
+    transform: scale(1.1);
+    transition: all linear .2s;
+}
+.part2 .part2-con ul li a .singerName{
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 2;
+}
+.part2 .part2-con ul li .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.part2 .part2-con ul li:hover .cover{
+    background: rgba(0,0,0,.2);
+}
+.part2 .part2-con .part2-name-lists{
+    font-size: 0;
+}
+.part2 .part2-con .part2-name-lists a{
+    color: #666;
+    font-size: 14px;
+    display: inline-block;
+    width: 160px;
+    text-align: left;
+    height: 38px;
+    line-height: 38px;
+}
+.part2 .part2-con .part2-name-lists a:hover{
+    color: #28a913;
+}
+
+.part2 .part2-con .pageAll{
+    font-size: 0;
+    margin-top: 30px;
+    float: left;
+    border-right: 1px solid #eee;
+}
+.part2 .part2-con .pageAll a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    border-right: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #000;
+}
+.part2 .part2-con .pageAll a:hover{
+    border: 1px solid #28a913;
+}
+.part2 .part2-con .pageAll a.cur{
+    color: #fff;
+    background-color: #28a913;
+}
+.part2 .part2-con .pageAll a.next{
+    width: 75px;
+}
+.part2 .part2-con .pageAll a.next i{
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 10px;
+    background: url("../images/btns.png") no-repeat;
+    background-position: -25px -189px;
+    vertical-align: sub;
+}
