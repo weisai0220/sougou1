@@ -791,6 +791,9 @@
     height: 30px;
     line-height: 30px;
     margin: 0 15px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .index-part5 .part5-tabs .part5-tab .part5-item ul li a{
     color: #888;

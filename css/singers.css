@@ -131,6 +131,7 @@
     float: left;
 }
 .part2 .part2-con .part2-filter{
+	font-size:0;
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd;
 }
@@ -139,6 +140,7 @@
     color: #222;
     font-size: 14px;
     border-radius: 3px;
+	margin-right:6px;
 }
 .part2 .part2-con .part2-filter a:hover,.part2 .part2-con .part2-filter a.cur{
     color: #fff;
