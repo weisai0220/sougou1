@@ -126,12 +126,14 @@
 
 .container{
     width: 1240px;
+	min-width:1240px;
     margin: 0 auto;
 }
 
 .page-nav{
     height: 36px;
     line-height: 36px;
+	width:1240px;
     background-color: #333;
 }
 .page-nav ul li{
